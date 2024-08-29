@@ -8,3 +8,11 @@ new Vue({
 }).$mount('#app')
 
 /*ARQUIVO PRINCIPAL DO APP*/
+
+
+
+
+
+
+
+
