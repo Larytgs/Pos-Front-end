@@ -17,7 +17,7 @@ main{
     margin: auto;
     text-align: center;
     padding: 20px; margin-top: 30px;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 header{
@@ -26,8 +26,9 @@ header{
 .avatar img{
     height: 80px;
     width: 50px;
+    border-radius: 5px;
     position: fixed;
-    margin-left: 7%;
+    margin-left: 5%;
 }
 
 .painel{
@@ -62,4 +63,6 @@ h5{
 .task img{
     margin-left: 20px;
     cursor: pointer;
+    position: fixed;
+    margin-left: 16%;
 }

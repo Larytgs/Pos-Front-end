@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     
     <main>
         <div class="container" id="app">
             <header>
-                <h1>{{ name }}</h1>
+                <h1>{{name}}</h1>
                 <div class="avatar"><img src="imgs/avatar.jpg" alt=""></div>
             </header>
         </div>
@@ -21,12 +22,12 @@
             <button v-onclick="addTask" class="add--task">+</button>
         </div>
     
-        <h5>SUAS TAREFAS</h5>
+        <h5>SUAS TAREFAS:</h5>
     
-        <div>
-            <div class="task">
+        <div v-for="item in items"><!--um nome -in- e o nome igual colocado la baixo-->
+            <div class="task"> <!--estrutura de repetição-->
                 <div class="status pending"></div>
-                <div class="text">Aprender VueJS</div>
+                <div class="text"> {{ item.text }} </div><!--colocando em chaves para aparecer os outros titulos-->
                 <img src="imgs/lixo.png" alt="Excluir" class="delete">
             </div>
         </div>
@@ -47,7 +48,12 @@
     var app = new Vue({
         el: '#app', //elemento (id)
         data:  { //para substituir os dados
-            name: 'LaryssaTGS'
+            name: 'LaryssaTGS',
+            items: [ //fazer uma lista, array
+                { text: 'Aprender ReactJS', status: 'done'},
+                { text: 'Aprender Vue.JS', status: 'pending'},
+                { text: 'Aprender Angular', status: 'pending'}
+            ]
         }
     });
 </script>
