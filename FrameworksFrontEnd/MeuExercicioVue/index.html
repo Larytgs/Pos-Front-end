@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="container" id="app">
+            <header>
+                <h1>{{ name }}</h1>
+                <div class="avatar"><img src="imgs/avatar.jpg" alt=""></div>
+            </header>
+        </div>
+    
+        <div class="painel">
+            <input type="text" v-model="task" placeholder="Digite uma tarefa">
+            <button v-onclick="addTask" class="add--task">+</button>
+        </div>
+    
+        <h5>SUAS TAREFAS</h5>
+    
+        <div>
+            <div class="task">
+                <div class="status pending"></div>
+                <div class="text">Aprender VueJS</div>
+                <img src="imgs/lixo.png" alt="Excluir" class="delete">
+            </div>
+        </div>
+    
+        <div class="model-layer" style="display: none;">
+            <div class="modal">
+                <h4>CONFIRA A EXCLUSÂO</h4>
+                <p>NOME DA TASK</p>
+                <div class="button">
+                    <button>CANCELAR</button>
+                    <button>CONFIRMAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script>
+    var app = new Vue({
+        el: '#app', //elemento (id)
+        data:  { //para substituir os dados
+            name: 'LaryssaTGS',
+        }
+    });
+</script>
+
+
+</body>
+</html>
