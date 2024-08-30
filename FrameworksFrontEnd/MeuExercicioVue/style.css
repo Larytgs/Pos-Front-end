@@ -39,6 +39,7 @@ header{
 .painel input{
     padding: 5px;
     border-radius: 10px;
+    width: 400px;
 }
 .add--task{
     padding: 10px;
