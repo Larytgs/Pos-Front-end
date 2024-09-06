@@ -2,11 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJS</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
+
 <body>
     
     <main>
@@ -19,18 +21,19 @@
     
         <div class="painel">
             <input type="text" v-model="task" placeholder="Digite uma tarefa">
-            <button v-onclick="addTask" class="add--task">+</button>
+            <button v-on:click="addTask" class="add-task">+</button>
         </div>
     
         <h5>SUAS TAREFAS:</h5>
     
-        <div vue-for="item in items"><!--um nome -in- e o nome igual colocado la baixo-->
+        <div v-for="(item,index) in itens"> ><!--um nome -in- e o nome igual colocado la baixo-->
             <div class="task"> <!--estrutura de repetição-->
-                <div class="status pending"></div>
-                <div class="text"> {{ item.text }} </div><!--colocando em chaves para aparecer os outros titulos-->
-                <img src="imgs/lixo.png" alt="Excluir" class="delete">
+              <div v-on:click="toggleStatus(index)" class="status" v-bind:class="item.status"></div>
+              <div class="text">{{ item.text }}</div>
+              <!--colocando em chaves para aparecer os outros titulos-->
+              <img src="imgs/lixo.png" alt="Excluir" class="delete">
             </div>
-        </div>
+          </div>
     
         <div class="model-layer" style="display: none;">
             <div class="modal">

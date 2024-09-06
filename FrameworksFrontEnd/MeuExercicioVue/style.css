@@ -63,6 +63,7 @@ h5{
 }
 .task img{
     margin-left: 20px;
+    padding: 10px;
     cursor: pointer;
     position: fixed;
     margin-left: 16%;
