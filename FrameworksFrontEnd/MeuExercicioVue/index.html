@@ -25,17 +25,18 @@
         </div>
     
         <h5>SUAS TAREFAS:</h5>
-    
-        <div v-for="(item,index) in itens"> ><!--um nome -in- e o nome igual colocado la baixo-->
+        <!--Por exemplo, a diretiva v-for pode ser usada para exibir uma lista de itens usando dados de um Array:-->
+        <div v-for="(item,index) in itens"><!--um nome -in- e o nome igual colocado la baixo-->
             <div class="task"> <!--estrutura de repetição-->
-              <div v-on:click="toggleStatus(index)" class="status" v-bind:class="item.status"></div>
-              <div class="text">{{ item.text }}</div>
-              <!--colocando em chaves para aparecer os outros titulos-->
-              <img src="imgs/lixo.png" alt="Excluir" class="delete">
+                <!--Para permitir aos usuários interagir com o aplicativo, podemos usar a diretiva v-on para anexar escutas a eventos (event listeners) que invocam métodos em nossas instâncias Vue:-->
+                <div v-on:click="toggleStatus(index)" class="status" v-bind:class="item.status"></div>
+                <div class="text">{{ item.text }}</div>
+                <!--colocando em chaves para aparecer os outros titulos-->
+                <img v-on:click="toggleModal(index)" src="imgs/lixo.png" alt="Excluir" class="delete">
             </div>
-          </div>
+        </div>
     
-        <div class="model-layer" style="display: none;">
+        <div class="model-layer" v-if="showModal" style="display: none;">
             <div class="modal">
                 <h4>CONFIRA A EXCLUSÂO</h4>
                 <p>NOME DA TASK</p>
@@ -52,7 +53,7 @@
         el: '#app', //elemento (id)
         data:  { //para substituir os dados
             name: 'LaryssaTGS',
-            items: [ //fazer uma lista, array
+            itens: [ //fazer uma lista, array
                 { text: 'Aprender ReactJS', status: 'done'},
                 { text: 'Aprender Vue.JS', status: 'pending'},
                 { text: 'Aprender Angular', status: 'pending'}
