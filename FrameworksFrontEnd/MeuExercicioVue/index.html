@@ -26,7 +26,7 @@
     
         <h5>SUAS TAREFAS:</h5>
         <!--Por exemplo, a diretiva v-for pode ser usada para exibir uma lista de itens usando dados de um Array:-->
-        <div v-for="(item,index) in itens"><!--um nome -in- e o nome igual colocado la baixo-->
+        <div v-for="(item, index) in itens"><!--um nome -in- e o nome igual colocado la baixo-->
             <div class="task"> <!--estrutura de repetição-->
                 <!--Para permitir aos usuários interagir com o aplicativo, podemos usar a diretiva v-on para anexar escutas a eventos (event listeners) que invocam métodos em nossas instâncias Vue:-->
                 <div v-on:click="toggleStatus(index)" class="status" v-bind:class="item.status"></div>
