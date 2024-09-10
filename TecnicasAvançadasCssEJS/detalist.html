@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail, Detalist e Sumary</title>
+    <style>
+        body{
+            background-color: rgb(53, 53, 53);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+            padding: 20px;
+        }
+        details{
+            border: 2px solid ;
+            padding: 10px;
+            margin: 5px;
+            width: 560px;
+        }
+        form{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Detail e Sumary</summary>
+        Os elementos Detail e Sumary são muito utilizados juntos, estes elementos implementam um efeito de "abrir e fechar" uma informação. 
+        <br>
+        Voce cria um tópico onde é possivel revelar um detalhe, uma informação sobre esse tópico.
+    </details>
+    <details open>
+        <summary>Detalist</summary>
+        O elemento Detalist é muito utilizado para criar uma lista suspensa de dados.
+    </details>
+
+    <br>
+
+    <form>
+        <label for="linguagem">Escolha sua linguagem de programação favorita:</label>
+        <input list="linguagens" name="linguagem" id="linguagem">
+        <datalist id="linguagens">
+            <option value="PHP">
+            <option value="Java">
+            <option value="Python">
+            <option value="C#">
+        </datalist>
+        <input type="submit">
+    </form>
+</body>
+</html>
