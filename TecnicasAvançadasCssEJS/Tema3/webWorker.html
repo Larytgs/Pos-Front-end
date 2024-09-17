@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Work</title>
+</head>
+<body>
+    <h3>Contar números: <output id="result"></output></h3>
+    <button onclick="starWorker()">Iniciar We Work</button>
+    <button onclick="stopWorker()">Parar Web Work</button>
+
+
+    <script>
+        var w;
+
+        function starWorker(){
+            if(typeof(Worker) !== "undefined"){
+                if(typeof(w) == "undefined") {
+                    w = new Worker("demo_worker.js");
+                }
+                w.onmessage = function(event) {
+                    document.getElementById("result").innerHTML = event.data;
+                }
+            }else {
+                document.getElementById("result").innerHTML = 'Dcp, seu navegador nao suporta';
+            }
+        }
+
+        function stopWorker(){
+            w.terminate();
+            w = undefined;
+        }
+    </script>
+</body>
+</html>
