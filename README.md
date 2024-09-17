@@ -43,3 +43,4 @@
 * <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - ClassesIntl - console</a>
 * <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - Interator - console</a>
 * <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - Promises - console</a>
+* <a href="TecnicasAvançadasCssEJS/Tema4/propriedadesNodes.html" target="_blank">Tema 4 - Propriedades Nodes</a>
