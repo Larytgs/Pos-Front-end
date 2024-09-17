@@ -32,4 +32,14 @@
 
 ## Técnicas Avançadas de CSS e JS:
 
-* <a href="Tec" target="_blank">Tema 4 Bloco 3 - Bootstrap</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/animação.html" target="_blank">Tema 1 - animação</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/detalist.html" target="_blank">Tema 1 - detalist</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/propriedades.html" target="_blank">Tema 1 - propriedades</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flexbox.html" target="_blank">Tema 2 - flexbox</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-basis.html" target="_blank">Tema 2 - flex-basic</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-grow.html" target="_blank">Tema 2 - flex-grow</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-shrink.html" target="_blank">Tema 2 - flex-shrink</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/async.html" target="_blank">Tema 3 - async</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - classesIntl</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - interator</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - promises</a>
