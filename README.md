@@ -33,13 +33,13 @@
 ## Técnicas Avançadas de CSS e JS:
 
 * <a href="TecnicasAvançadasCssEJS/Tema1/animação.html" target="_blank">Tema 1 - Animação</a>
-* <a href="TecnicasAvançadasCssEJS/Tema1/detalist.html" target="_blank">Tema 1 - Setalist</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/detalist.html" target="_blank">Tema 1 - Detalist</a>
 * <a href="TecnicasAvançadasCssEJS/Tema1/propriedades.html" target="_blank">Tema 1 - Propriedades</a>
 * <a href="TecnicasAvançadasCssEJS/Tema2/flexbox.html" target="_blank">Tema 2 - Flexbox</a>
 * <a href="TecnicasAvançadasCssEJS/Tema2/flex-basis.html" target="_blank">Tema 2 - Flex-basic</a>
 * <a href="TecnicasAvançadasCssEJS/Tema2/flex-grow.html" target="_blank">Tema 2 - Flex-grow</a>
 * <a href="TecnicasAvançadasCssEJS/Tema2/flex-shrink.html" target="_blank">Tema 2 - Flex-shrink</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/async.html" target="_blank">Tema 3 - async</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - ClassesIntl</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - Interator</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - Promises</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/async.html" target="_blank">Tema 3 - async - console</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - ClassesIntl - console</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - Interator - console</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - Promises - console</a>
