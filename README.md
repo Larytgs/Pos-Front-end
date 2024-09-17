@@ -26,20 +26,20 @@
 * <a href="LinguagensEPadroesWeb/Tema2B4/destista.html" target="_blank">Tema 2 Bloco 4 - WebSite com CSS(consultório)</a>
 * <a href="LinguagensEPadroesWeb/Tema3/Bloco3/index.html" target="_blank">Tema 3 Bloco 3 - Texto em JavaScript</a>
 * <a href="LinguagensEPadroesWeb/Tema3/Bloco4/index.html" target="_blank">Tema 3 Bloco 4 - Formulário</a>
-* <a href="LinguagensEPadroesWeb/Tema4/Bloco1e2/index.html" target="_blank">Tema 4 Bloco 1 e 2</a>
+* <a href="LinguagensEPadroesWeb/Tema4/Bloco1e2/index.html" target="_blank">Tema 4 Bloco 1 e 2 - Páginas</a>
 * <a href="LinguagensEPadroesWeb/Tema4/Bloco3/index.html" target="_blank">Tema 4 Bloco 3 - Bootstrap</a>
 
 
 ## Técnicas Avançadas de CSS e JS:
 
-* <a href="TecnicasAvançadasCssEJS/Tema1/animação.html" target="_blank">Tema 1 - animação</a>
-* <a href="TecnicasAvançadasCssEJS/Tema1/detalist.html" target="_blank">Tema 1 - detalist</a>
-* <a href="TecnicasAvançadasCssEJS/Tema1/propriedades.html" target="_blank">Tema 1 - propriedades</a>
-* <a href="TecnicasAvançadasCssEJS/Tema2/flexbox.html" target="_blank">Tema 2 - flexbox</a>
-* <a href="TecnicasAvançadasCssEJS/Tema2/flex-basis.html" target="_blank">Tema 2 - flex-basic</a>
-* <a href="TecnicasAvançadasCssEJS/Tema2/flex-grow.html" target="_blank">Tema 2 - flex-grow</a>
-* <a href="TecnicasAvançadasCssEJS/Tema2/flex-shrink.html" target="_blank">Tema 2 - flex-shrink</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/animação.html" target="_blank">Tema 1 - Animação</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/detalist.html" target="_blank">Tema 1 - Setalist</a>
+* <a href="TecnicasAvançadasCssEJS/Tema1/propriedades.html" target="_blank">Tema 1 - Propriedades</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flexbox.html" target="_blank">Tema 2 - Flexbox</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-basis.html" target="_blank">Tema 2 - Flex-basic</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-grow.html" target="_blank">Tema 2 - Flex-grow</a>
+* <a href="TecnicasAvançadasCssEJS/Tema2/flex-shrink.html" target="_blank">Tema 2 - Flex-shrink</a>
 * <a href="TecnicasAvançadasCssEJS/Tema3/async.html" target="_blank">Tema 3 - async</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - classesIntl</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - interator</a>
-* <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - promises</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/classesIntl.html" target="_blank">Tema 3 - ClassesIntl</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/interator.html" target="_blank">Tema 3 - Interator</a>
+* <a href="TecnicasAvançadasCssEJS/Tema3/promises.html" target="_blank">Tema 3 - Promises</a>
