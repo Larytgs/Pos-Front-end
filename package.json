@@ -1,0 +1,11 @@
+{
+  "name": "meus_exercicios_da_facul",
+  "version": "1.0.0",
+  "description": "Projeto academico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laryssa",
+  "license": "ISC"
+}
