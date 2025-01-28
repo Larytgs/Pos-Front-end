@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema1</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.897);
+            color: white;
+        }
+        h1, h2{
+            color: rgb(0, 195, 255);
+            text-align: center;
+        }
+        h3{
+            color: yellow;
+        }
+        div{
+            display: flex;
+        }
+        img{
+            margin: 10px;
+        }
+        div#SegPag{
+            margin-top: 2%; margin-left: 30px; 
+            border: 2px solid yellow; 
+            border-radius: 20px; 
+            padding: 10px; 
+            height: 80px; width: 400px;
+        }
+
+        article{
+            display: flex;
+        }
+        article form{
+            margin: 10px 50px;
+            padding: 0px 10px;
+            border: 2px dotted yellow;
+        }
+        input, textarea{
+            background-color: black;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        button{
+            cursor: pointer;
+            background-color: rgba(233, 13, 13, 0.897);
+            color: white;
+            margin-top: 20%; padding: 5px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biblioteca do Desenvolvedor</h1>
+    <div>
+        <ul>
+            <li><h3>Demonstração de lista --></h3></li>
+            <li><strong>Autor:</strong> Anderson
+            <li><strong>Editora:</strong> Saber
+            <li><strong>Páginas:</strong> 400
+        </ul>
+        <img style="margin-left: 50px;" src="imgs/exLista.png" alt="">
+
+        <div id="SegPag">
+            <h3 style="padding-right: 10px;">Gostaria de ir para a segunda página?</h3>
+            <a href="./paginas/pagina2.html"><button type="submit">Clique aqui</button></a>
+        </div>
+    </div>
+
+    <h2>Demonstração de Formulários</h2>
+    <article>
+        <form>
+            <h3>Apenas o Formulário</h3>
+            <label>Nome:</label>
+            <input type="text" placeholder="Nome">
+            <br>
+            <label>E-mail:</label>
+            <input type="email" placeholder="E-mail">
+            <br>
+            <label>Mensagem:</label>
+            <textarea placeholder="Mensagem" rows="10" cols="18"></textarea>
+            <!--rows: tamanho de linhas cols: tamanho da coluna-->
+        </form>
+        <img src="imgs/exForm1.png" alt="">
+    </article>
+    <article>
+        <form>
+            <h3>Formulário com tabela: (mais organizado)</h3>
+            <table>
+                <tr>
+                    <td><label>Nome:</label></td>
+                    <td><input type="text" placeholder="Nome"></td>
+                </tr>
+                <tr>
+                    <td><label>E-mail:</label></td>
+                    <td><input type="email" placeholder="E-mail"></td>
+                </tr>
+                <tr>
+                    <td><label>Mensagem:</label></td>
+                    <td><textarea placeholder="Mensagem" rows="10" cols="18"></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <img src="imgs/exForm2.png" alt="">
+    </article>
+
+</body>
+</html>

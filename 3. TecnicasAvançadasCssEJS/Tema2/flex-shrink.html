@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink</title>
+    <style>
+        .container{
+            display: flex;
+            width: 500px;
+            height: 500px;
+        }
+        .container div{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+        .container div:nth-of-type(2) {flex-shrink: 10;}
+        .container div:nth-of-type(5) {flex-shrink: 30;}
+    </style>
+</head>
+<body>
+    <h3>Flex-shrink: Oposto do Flex-grow, especifica como o item será reduzido em relação ao restante dos itens flexíveis dentro do mesmo container. Se o elemento não for um item flexível, a flex-shrink não terá efeito.</h3>
+    <div class="container">
+        <div style="background-color: red;"></div>
+        <div id="2" style="background-color: blue;"></div>
+        <div style="background-color: yellow;"></div>
+        <div style="background-color: purple;"></div>
+        <div style="background-color: palevioletred;"></div>
+        <div style="background-color: green;"></div>
+    </div>
+</body>
+</html>

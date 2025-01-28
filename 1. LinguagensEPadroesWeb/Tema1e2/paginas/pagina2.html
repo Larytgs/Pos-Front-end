@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina2</title>
+    <style>
+        body{
+            background-color: rgba(34, 32, 63, 0.897);
+            color: rgb(117, 233, 161);
+        }
+
+        h2{
+            color: yellow;
+            font-size: 1.3em;
+        }
+
+        #div1{
+            border: 3px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            height: 80px; width: 400px;
+        }
+        #div1 button{
+            margin-top: 40%; margin-left: 10px;
+        }
+        div{
+            display: flex;
+        }
+        button{
+            cursor: pointer;
+            background-color: rgba(233, 13, 13, 0.897);
+            color: white;
+
+            margin-top: 18%; margin-left: 2px; 
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Essa é a 2ª página, e está colocada numa pasta, por isso  ../  significa "voltar 2 vezes pra tras"</h2>
+    <img src="../imgs/exemplo.png" alt="Imagem">
+    <img src="../imgs/exemplo2.png" alt="">
+
+    <br><br>
+
+    <div id="div1">
+        <h3>Essa é a segunda página. <br> Gostaria de ir para a primeira?</h3>
+        <a href="../index.html"><button type="submit">Clique aqui</button></a>
+    </div>
+
+    <h3>Conheça os Estilos em Cascata:</h3>
+    <div>
+        <h4 style="padding-right: 10px;">1. Estilo Inline</h4>
+        <a href="../paginas/inline.html"><button type="submit">Clique aqui</button></a>
+    </div>
+    <div>
+        <h4 style="padding-right: 10px;">2.	Estilo Locais/Internos</h4>
+        <a href="../paginas/interna.html"><button type="submit">Clique aqui</button></a>
+    </div>
+    <div>
+        <h4 style="padding-right: 10px;">3. Estilo Externo</h4>
+        <a href="../paginas/externa.html"><button type="submit">Clique aqui</button></a>
+    </div>
+</body>
+</html>
