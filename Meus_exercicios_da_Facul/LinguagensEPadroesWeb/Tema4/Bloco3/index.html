@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Bootstrap</h1>
+        <h4>O framework mais popular do mundo para criar sites responsivos e voltados para dispositivos móveis</h4>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../Bloco1e2/index.html">Inicio</a></li>  <!--colocar li* e o numero-->
+            <li><a href="../Bloco1e2/htmls/pagina2.html">2ª Página</a></li>
+            <li><a href="index.html">3ª Página</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <div class="container">
+            <div class="card">
+                <h1 class="card-header">Lista de Tarefas</h1>
+                <div class="input-group mb-3">
+                    <input type="text" name="tarefa" class="form-control" placeholder="Digite a tarefa" autofocus>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="botao">Cadastrar</button> <!--btn-primary: a cor azul aplicada pel bootstrap-->
+                    </div>
+                </div>
+                <ul id="lista" class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+    <footer class="rodape">
+        <h3>Rodapé da Página.</h3>
+    </footer>
+</body>
+</html>

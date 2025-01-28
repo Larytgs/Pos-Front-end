@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Funcional Assíncrona e Prototype</title>
+    <style>
+        body{background-color: rgba(56, 55, 55, 0.842); color: white;}
+        h4{text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h1>Programação Funcional</h1>
+    <h5>Antes de falarmos de JavaScript como programação funcional, precisamos entender o que é a programação funcional. Este tipo de programação pode ser entendido como o desenvolvimento de software que implementa e utiliza funções. Dessa forma, o estado de elementos não é compartilhado, os dados podem sofrer alterações e dizemos que é um tipo de programação declarativa. <br><br>
+    A linguagem JavaScript é uma linguagem de programação funcional, isso porque esta linguagem é fundamentada em funções. O JavaScript utiliza classes, objetos, herança e outros conceitos. Todos eles são implementados com funções. Outro ponto positivo desta linguagem e que é uma característica da programação funcional, é que seus códigos não são executados em tempo de compilação, e sim em tempo de execução (runtime). </h5>
+
+    <h3>Exemplo 1:</h3>
+    <h4>A multiplicação dos elementos da arrasy são iguais a:</h4>
+    <p id="multi1"></p>
+
+    <hr>
+
+    <h3>Exemplo 2</h3>
+    <h4>A soma e a multiplicação juntas sao iguais a:</h4>
+    <p id="soma"></p>
+    <p id="multi2"></p>
+
+    <hr>
+
+    <h3>Exemplo 3</h3>
+    <h4>Os numero da matriz são rais quadrada de:</h4>
+    <p id="raizz"></p>
+
+    <hr>
+
+    <h1>Programação assíncrona</h1>
+    <h5>A linguagem de programação JavaScript é classificada como uma linguagem assíncrona, e isso significa que as instruções não possuem uma ordem definida para serem executadas. Dessa forma, a linguagem de programação JavaScript possui instruções complicadas de serem entendidas, mas fáceis de serem lidas. Isso garante que programas desenvolvidos com JavaScript tenham um melhor desempenho. <br><br> 
+    Um exemplo de programação assíncrona em JavaScript é a chamada a APIs, que são processos que dependem da velocidade de conexão do usuário e do tempo de resposta do servidor. 
+    Para trabalhar com programação assíncrona em JavaScript, é possível usar as palavras-chave async e await, o método then() ou o objeto Promise e seus métodos.
+    <br> <br>
+    Quando uma função assíncrona é chamada, ela retorna uma Promise. Quando a função assíncrona retorna um valor, a Promise será resolvida com o valor retornado. Quando a função assíncrona lança uma exceção ou algum valor, a Promise será rejeitada com o valor lançado.
+    <br>Uma função assíncrona pode conter uma expressão await, que pausa a execução da função assíncrona e espera pela resolução da Promise passada, e depois retoma a execução da função assíncrona e retorna o valor resolvido.</h5>
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function " target="_blank">Exemplos nesse site</a>
+
+    <hr>
+
+    <h1>Prototype</h1>
+    <h5>Se pudéssemos definir um prototype, poderíamos dizer que basicamente ele é um objeto disponível para funções da linguagem JavaScript. A linguagem JavaScript é fundamentada em protótipos, e isso significa que esta linguagem utiliza uma cadeia de protótipos. Todas as propriedades, assim como os métodos de uma linguagem JavaScript, são definidas na propriedade prototy</h5>
+
+    <button id="btnTeste1" onclick="DisparaTeste1()">Teste 1 = Criar os objetos JSON</button>
+    <button id="btnTeste2" onclick="DisparaTeste2()">Teste 2 = Executar as funções</button>
+
+
+    <script>
+        function multiplicar(função){
+            return function(array){
+                return função.apply(null, array)
+            }
+        }
+        var multiplicarElemntosArray = multiplicar(function(x, y) {
+            return x * y
+        })
+        document.getElementById('multi1').innerHTML = '2 x 6 = '+multiplicarElemntosArray([2, 6])
+
+
+        const soma = (x, y) => x + y
+        const multi = (x, y) => x * y
+        document.getElementById('soma').innerHTML = '2 + 5 = ' + soma(2, 5)
+        document.getElementById('multi2').innerHTML = '2 x 5 = ' + multi(2, 5)
+
+
+        const numbers = [3, 5, 9]
+        const raiz = x => x * x 
+        document.getElementById('raizz').innerHTML = 'raiz de 3, 5 e 9 = ' + numbers.map(raiz)
+
+
+
+        //Prototype
+        var objBase
+
+        function ConstrutorJSON() {
+            this.nome = 'Fernanda'
+            this.idade = '34'
+            this.profissao = 'Analista de Sistemas'
+            this.endereço = 'Condominio Bartolomeu'
+            this.numero = 199
+        }
+
+        ConstrutorJSON.prototype.pessoa = function(){
+            return this.nome + "\r\nSua profissão: " + this.profissao + "\r\nIdade: " + this.idade.toString()
+        }
+        ConstrutorJSON.prototype.endereçoCompleto = function(){
+            return this.endereço + ", " + this.numero
+        }
+
+        function ExecuçãoCriaçãoObjeto(){
+            objBase = new ConstrutorJSON()
+        }
+        function ExecutarTesteObtençãoDados(){
+            if(objBase == null)
+                ExecuçãoCriaçãoObjeto()
+            alert(objBase.pessoa())
+            alert(objBase.endereçoCompleto())
+            
+        }
+
+        function DisparaTeste1(){
+            ExecuçãoCriaçãoObjeto()
+            
+            alert("Dados Criados: \r\n" + objBase.nome+ "\r\n" + objBase.idade + "\r\n" + objBase.profissao + "\r\n" + objBase.endereço + "\r\n" + objBase.numero)
+        }
+
+        function DisparaTeste2(){
+            alert("Dados obtidos das funçoes: \r\nNome da pessoa: " + objBase.pessoa() + "\r\nEndereço Completo: " + objBase.endereçoCompleto()) 
+        }
+    </script>
+</body>
+</html>

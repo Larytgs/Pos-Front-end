@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX E SUAS PROPRIEDADES</title>
+    <style>
+        .container1{
+            display: flex;
+            flex-direction: row-reverse; /*organizar a direção dos itens*/
+            justify-content: center;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+        }
+        .a{
+            background-color: blue;
+        }
+        .b{
+            background-color: yellow;
+        }
+        .c{
+            background-color: red;
+        }
+        .d{
+            background-color: green;
+        }
+        .e{
+            background-color: rgb(247, 63, 222);
+        }
+        .f{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item a"></div>
+        <div class="item b"></div>
+        <div class="item c"></div>
+        <div class="item d"></div>
+        <div class="item e"></div>
+        <div class="item f"></div>
+    </div>
+    <div class="container2">
+        <div class="item a"></div>
+        <div class="item b"></div>
+        <div class="item c"></div>
+        <div class="item d"></div>
+        <div class="item e"></div>
+        <div class="item f"></div>
+    </div>
+</body>
+</html>

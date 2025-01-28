@@ -1,0 +1,42 @@
+@charset "UTF-8"; /*é uma regra, bom para pontuação*/
+
+body {
+    background-color:rgba(102, 51, 153, 0.719);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    overflow: hidden; /*ocultar barra de rolagem*/
+}
+h1 {
+    color: yellow;
+    background-color: rgb(102, 51, 153);
+    text-align: center;
+}
+h2, h3 {
+    color: yellow;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+p {
+    text-align: justify;
+    color: white;
+    margin-top: 1.6%; margin-left: 10px;
+    width: 1050px;
+}
+img{
+    height: 305px;
+    padding-left: 5px;
+}
+div{
+    display: flex;
+}
+.VanDes{
+    margin: -20px 20px;
+}
+button{
+    cursor: pointer;
+    background-color: rgba(233, 13, 13, 0.897);
+    color: white;
+    margin-top: 20%; margin-left: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}

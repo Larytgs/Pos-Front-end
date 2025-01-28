@@ -1,0 +1,113 @@
+@charset "UTF-8"; /*é uma regra, bom para pontuação*/
+
+*{
+    margin: 0%; padding: 0%;
+}
+
+body{
+    background-color: rgba(127, 255, 212, 0.685);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cabecalho{
+    height: 40px;
+    padding: 30px;
+    text-align: center;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.menu{
+    background-color: blue;
+    overflow: hidden;
+}
+.menu ul{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.menu ul, li{
+    padding: 0;
+    margin: 0;
+}
+.menu li, a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu a{
+    padding: 15px 30px;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+.row{
+    padding: 10px;
+    margin-bottom: 8%;
+}
+.row::after{ /*limpesa da formatação*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#secao1{
+    float: left;
+    width: 65%;
+    background-color: yellow;
+    margin: 10px; padding: 5px;
+}
+
+#secao2{
+    float: left;
+    width: 30%;
+    background-color: yellow;
+    margin: 10px; padding: 5px;
+}
+
+.rodape{
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+@media all and (min-width: 320px ) and (max-width: 529px) { /*para celular*/
+
+    .cabecalho h1{
+        font-size: 2em;
+    }
+
+    .menu{
+        padding: 1px;
+    }
+    .menu li a{
+        font-size: 0.9em;
+    }
+    .menu a{
+        padding: 15px 10px;
+    }
+    .menu ul{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    #secao2{
+        width: 65%;
+        margin-bottom: 10px;
+    }
+
+    .rodape{
+        padding: 5px;
+        position: fixed;
+        bottom: 0%;
+    }
+    .rodape h3{
+        font-size: 1em; 
+        padding-top: 5px;
+    }
+}
